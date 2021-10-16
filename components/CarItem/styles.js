@@ -13,6 +13,16 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'
+    },
+    headerTitle: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 'bold',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    icon: {
+        color: 'white'
     }
 });
 

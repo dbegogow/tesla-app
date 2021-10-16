@@ -8,9 +8,9 @@ const CarItem = () => {
     return (
         <View style={styles.carContainer}>
             <View style={styles.header}>
-                <FontAwesomeIcon icon={faCog} />
-                <Text>Tesla Model S</Text>
-                <FontAwesomeIcon icon={faToolbox} />
+                <FontAwesomeIcon style={styles.icon} icon={faCog} size={24} />
+                <Text style={styles.headerTitle}>Tesla Model S</Text>
+                <FontAwesomeIcon style={styles.icon} icon={faToolbox} size={24} />
             </View>
         </View>
     );
