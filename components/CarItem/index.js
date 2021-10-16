@@ -31,15 +31,21 @@ const CarItem = () => {
                 <Text style={styles.statusText}>Parked</Text>
             </View>
             <View style={styles.controls}>
-                <View style={styles.controlsButton}>
-                    <FontAwesomeIcon style={styles.icon} icon={faFan} size={24} />
-                </View>
-                <View style={styles.controlsButton}>
-                    <FontAwesomeIcon style={styles.icon} icon={faKey} size={24} />
-                </View>
-                <View style={styles.controlsButton}>
-                    <FontAwesomeIcon style={styles.icon} icon={faLock} size={24} />
-                </View>
+                <TouchableOpacity>
+                    <View style={styles.controlsButton}>
+                        <FontAwesomeIcon style={styles.icon} icon={faFan} size={24} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.controlsButton}>
+                        <FontAwesomeIcon style={styles.icon} icon={faKey} size={24} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <View style={styles.controlsButton}>
+                        <FontAwesomeIcon style={styles.icon} icon={faLock} size={24} />
+                    </View>
+                </TouchableOpacity>
             </View>
         </View>
     );
