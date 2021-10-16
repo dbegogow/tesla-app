@@ -23,6 +23,10 @@ const styles = StyleSheet.create({
     },
     icon: {
         color: 'white'
+    },
+    backgroundImage: {
+        width: '100%',
+        height: '100%'
     }
 });
 

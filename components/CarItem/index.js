@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ImageBackground } from 'react-native';
 import styles from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faCog, faToolbox } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +7,10 @@ import { faCog, faToolbox } from '@fortawesome/free-solid-svg-icons';
 const CarItem = () => {
     return (
         <View style={styles.carContainer}>
+            <ImageBackground
+                source={require('../../assets/background.png')}
+                style={styles.backgroundImage}
+            />
             <View style={styles.header}>
                 <FontAwesomeIcon style={styles.icon} icon={faCog} size={24} />
                 <Text style={styles.headerTitle}>Tesla Model S</Text>
