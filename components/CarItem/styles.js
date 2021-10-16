@@ -53,6 +53,19 @@ const styles = StyleSheet.create({
         fontSize: 19,
         fontWeight: 'bold',
         marginTop: 3
+    },
+    controls: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginTop: 175
+    },
+    controlsButton: {
+        borderWidth: 1,
+        borderColor: 'white',
+        borderRadius: 50,
+        padding: 18,
+        marginLeft: 13,
+        marginRight: 13
     }
 });
 

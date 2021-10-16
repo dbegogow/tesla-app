@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faCog, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faToolbox, faFan, faKey, faLock } from '@fortawesome/free-solid-svg-icons';
 
 const CarItem = () => {
     return (
@@ -29,6 +29,17 @@ const CarItem = () => {
             </View>
             <View style={styles.status}>
                 <Text style={styles.statusText}>Parked</Text>
+            </View>
+            <View style={styles.controls}>
+                <View style={styles.controlsButton}>
+                    <FontAwesomeIcon style={styles.icon} icon={faFan} size={24} />
+                </View>
+                <View style={styles.controlsButton}>
+                    <FontAwesomeIcon style={styles.icon} icon={faKey} size={24} />
+                </View>
+                <View style={styles.controlsButton}>
+                    <FontAwesomeIcon style={styles.icon} icon={faLock} size={24} />
+                </View>
             </View>
         </View>
     );
