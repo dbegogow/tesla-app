@@ -7,7 +7,12 @@ const styles = StyleSheet.create({
         backgroundColor: 'orange'
     },
     header: {
-        
+        marginTop: 50,
+        marginLeft: 20,
+        marginRight: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     }
 });
 
