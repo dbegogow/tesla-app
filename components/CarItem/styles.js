@@ -4,20 +4,19 @@ const styles = StyleSheet.create({
     carContainer: {
         width: '100%',
         height: '100%',
-        backgroundColor: 'orange'
     },
     header: {
-        marginTop: 50,
+        marginTop: 40,
         marginLeft: 20,
         marginRight: 20,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginBottom: 7
+        marginBottom: 12
     },
     headerTitle: {
         color: 'white',
-        fontSize: 16,
+        fontSize: 17,
         fontWeight: 'bold',
         alignItems: 'center',
         justifyContent: 'center'
@@ -27,7 +26,7 @@ const styles = StyleSheet.create({
     },
     backgroundImage: {
         width: '100%',
-        height: '100%',
+        height: '105%',
         resizeMode: 'cover',
         position: 'absolute'
     },
@@ -45,6 +44,15 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 22,
         fontWeight: 'bold'
+    },
+    status: {
+        alignItems: 'center'
+    },
+    statusText: {
+        color: 'white',
+        fontSize: 19,
+        fontWeight: 'bold',
+        marginTop: 3
     }
 });
 

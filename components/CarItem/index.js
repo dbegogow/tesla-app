@@ -23,6 +23,9 @@ const CarItem = () => {
                 />
                 <Text style={styles.batteryText}>150 mi</Text>
             </View>
+            <View style={styles.status}>
+                <Text style={styles.statusText}>Parked</Text>
+            </View>
         </View>
     );
 };
