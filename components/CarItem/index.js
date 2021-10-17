@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, ImageBackground, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faCog, faToolbox, faFan, faKey, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faToolbox, faFan, faKey, faLock, faUnlockAlt } from '@fortawesome/free-solid-svg-icons';
 
 const CarItem = () => {
+    const [locked, setLocked] = useState(true);
+
+    const clickLock = () => {
+        locked
+            ? setLocked(false)
+            : setLocked(true);
+    };
+
     return (
         <View style={styles.carContainer}>
             <ImageBackground
@@ -41,9 +49,11 @@ const CarItem = () => {
                         <FontAwesomeIcon style={styles.icon} icon={faKey} size={24} />
                     </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity
+                    onPress={clickLock}
+                >
                     <View style={styles.controlsButton}>
-                        <FontAwesomeIcon style={styles.icon} icon={faLock} size={24} />
+                        <FontAwesomeIcon style={styles.icon} icon={locked ? faLock : faUnlockAlt} size={24} />
                     </View>
                 </TouchableOpacity>
             </View>
