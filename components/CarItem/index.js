@@ -3,6 +3,7 @@ import { View, Text, ImageBackground, Image, TouchableOpacity } from 'react-nati
 import styles from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faCog, faToolbox, faFan, faKey, faLock, faUnlockAlt } from '@fortawesome/free-solid-svg-icons';
+import Menu from '../Menu';
 
 const CarItem = () => {
     const [locked, setLocked] = useState(true);
@@ -57,6 +58,7 @@ const CarItem = () => {
                     </View>
                 </TouchableOpacity>
             </View>
+            <Menu />
         </View>
     );
 };
