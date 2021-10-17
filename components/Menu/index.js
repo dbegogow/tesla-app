@@ -22,6 +22,7 @@ const Menu = () => {
                     <FontAwesomeIcon style={styles.icon} icon={faClock} size={24} />
                     <View style={styles.menuTextBox}>
                         <Text style={styles.menuText}>Software Updates</Text>
+                        <Text style={styles.subTitle}>Approximate time to install: 45 min</Text>
                     </View>
                     <FontAwesomeIcon style={styles.arrowIcon} icon={faChevronRight} size={24} />
                 </View>
@@ -31,6 +32,7 @@ const Menu = () => {
                     <FontAwesomeIcon style={styles.icon} icon={faThermometerHalf} size={24} />
                     <View style={styles.menuTextBox}>
                         <Text style={styles.menuText}>Climate</Text>
+                        <Text style={styles.subTitle}>20°F</Text>
                     </View>
                     <FontAwesomeIcon style={styles.arrowIcon} icon={faChevronRight} size={24} />
                 </View>
@@ -76,6 +78,7 @@ const Menu = () => {
                     <FontAwesomeIcon style={styles.icon} icon={faKey} size={24} />
                     <View style={styles.menuTextBox}>
                         <Text style={styles.menuText}>Phone Key</Text>
+                        <Text style={styles.subTitle}>Disconnected</Text>
                     </View>
                     <FontAwesomeIcon style={styles.arrowIcon} icon={faChevronRight} size={24} />
                 </View>
